@@ -22,12 +22,3 @@ jobs:
       cache_mamba_env: false
       lint: false
       mamba_env_name: daily-ci
-
-  slack-notify-ci:
-    needs: test
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/slack-notify.yml@main
-    secrets: inherit
-    with:
-      result: needs.test.result
-      channel: python_boilerplate-feed
-      message: Daily CI action
