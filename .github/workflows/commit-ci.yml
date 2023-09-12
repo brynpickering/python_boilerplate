@@ -20,9 +20,3 @@ jobs:
       py3version: "11"
       notebook_kernel: python_boilerplate
       lint: false
-
-  aws-upload:
-    needs: test
-    if: needs.test.result == 'success'
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/aws-upload.yml@main
-    secrets: inherit

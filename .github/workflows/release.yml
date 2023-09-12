@@ -6,15 +6,16 @@ on:
 
 jobs:
   conda-upload:
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-upload.yml@fix-input-refs
-    secrets: inherit
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-upload.yml@main
+    secrets:
+      ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
     with:
       package_name: python_boilerplate
 
   docs-stable:
     permissions:
       contents: write
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@update-docs-deploy
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@main
     with:
       deploy_type: update_stable
       notebook_kernel: python_boilerplate

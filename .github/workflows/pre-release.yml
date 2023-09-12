@@ -7,6 +7,8 @@ on:
 
 jobs:
   conda-build:
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-build.yml@fix-input-refs
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-build.yml@main
+    secrets:
+      ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
     with:
       package_name: python_boilerplate
