@@ -7,6 +7,6 @@ on:
 
 jobs:
   conda-build:
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-build.yml@main
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-build.yml@fix-input-refs
     with:
       package_name: python_boilerplate
