@@ -16,7 +16,7 @@
       "version": "0.1.0",
       "command_line_interface": "y",
       "create_docker_file": "y",
-      "create_author_file": "y",
+      "create_author_file": "n",
       "create_jupyter_notebook_directory": "y",
       "open_source_license": "MIT license",
       "_template": "https://github.com/arup-group/cookiecutter-pypackage.git"
