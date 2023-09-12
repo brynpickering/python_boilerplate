@@ -4,8 +4,8 @@
 
 # Python Boilerplate
 
-![CIbadge](https://github.com/brynpickering/python_boilerplate/workflows/CI/badge.svg)
-[![](https://github.com/brynpickering/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://brynpickering.github.io/python_boilerplate)
+[![Daily CI Build](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml/badge.svg)](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml)
+[![Documentation](https://github.com/arup-group/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://arup-group.github.io/python_boilerplate)
 
 <!--- --8<-- [end:docs] -->
 
