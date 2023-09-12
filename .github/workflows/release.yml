@@ -6,7 +6,7 @@ on:
 
 jobs:
   conda-upload:
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-upload.yml@main
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/conda-upload.yml@fix-input-refs
     secrets: inherit
     with:
       package_name: python_boilerplate
@@ -14,7 +14,7 @@ jobs:
   docs-stable:
     permissions:
       contents: write
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@main
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@update-docs-deploy
     with:
       deploy_type: update_stable
       notebook_kernel: python_boilerplate
