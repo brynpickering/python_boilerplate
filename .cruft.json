@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/arup-group/cookiecutter-pypackage",
-  "commit": "3e88315ecb2583259c8f999f66745a6d6b126836",
+  "commit": "9254fb823097832fc387ea8bfc84e94d2848b06f",
   "checkout": null,
   "context": {
     "cookiecutter": {
@@ -8,8 +8,9 @@
       "email": "bryn.pickering@arup.com",
       "github_username": "brynpickering",
       "repository_org": "brynpickering",
-      "project_name": "Python Boilerplate",
-      "project_slug": "python_boilerplate",
+      "project_title": "Python Boilerplate",
+      "repository_name": "python_boilerplate",
+      "package_name": "python_boilerplate",
       "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
       "index_package": "conda",
       "conda_channel": "brynpickering",
