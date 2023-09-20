@@ -90,7 +90,7 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 
-name = "python_boilerplate"
+name = "bryn_python_boilerplate"
 authors = [
     { name = "Bryn Pickering", email = "17178478+brynpickering@users.noreply.github.com" },
 ]
