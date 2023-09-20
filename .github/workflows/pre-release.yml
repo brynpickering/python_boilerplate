@@ -11,4 +11,11 @@ jobs:
     secrets:
       ANACONDA_TOKEN: ${{ secrets.ANACONDA_TOKEN }}
     with:
-      package_name: python_boilerplate
+      package_name: bryn_python_boilerplate
+
+  pip-build:
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/pip-build.yml@add-pip-upload
+    secrets:
+      TEST_PYPI_API_TOKEN: ${{ secrets.TEST_PYPI_API_TOKEN }}
+    with:
+      package_name: bryn_python_boilerplate
