@@ -7,6 +7,8 @@
 [![Daily CI Build](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml/badge.svg)](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml)
 [![Documentation](https://github.com/arup-group/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://arup-group.github.io/python_boilerplate)
 
+This is a test repo.
+
 <!--- --8<-- [end:docs] -->
 
 ## Documentation
