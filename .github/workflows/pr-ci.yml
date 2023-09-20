@@ -45,4 +45,4 @@ jobs:
       upload_flamegraph: true
 
   cruft-check:
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/template-check.yml@add-template-checker
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/template-check.yml@main
