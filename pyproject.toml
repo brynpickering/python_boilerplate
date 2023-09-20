@@ -73,9 +73,9 @@ include = ["python_boilerplate*"]
 
 [tool.setuptools.package-data]
 
-python_boilerplate = [
-] # Add file globs from the source code directory if they include non-py files that should be packaged
+# Add file globs from the source code directory if they include non-py files that should be packaged
 # E.g. "fixtures/**/*"
+python_boilerplate = []
 
 [build-system]
 requires = ["setuptools"]
