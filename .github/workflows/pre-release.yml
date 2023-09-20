@@ -15,5 +15,7 @@ jobs:
 
   pip-build:
     uses: arup-group/actions-city-modelling-lab/.github/workflows/pip-build.yml@add-pip-upload
+    permissions:
+      id-token: write
     with:
       package_name: bryn_python_boilerplate
