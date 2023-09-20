@@ -23,7 +23,7 @@ If you have followed the non-developer installation instructions above, you will
 mamba install -n python_boilerplate jupyter
 ```
 
-With Jupyter installed, it's easiest to then add the environment as a jupyter kernel: 
+With Jupyter installed, it's easiest to then add the environment as a jupyter kernel:
 
 ``` shell
 mamba activate python_boilerplate

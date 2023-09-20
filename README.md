@@ -2,7 +2,7 @@
 <!--- --8<-- [start:docs] -->
 ![python_boilerplate](resources/logos/title.png)
 
-# Python Boilerplate
+# Python Boilerplate (python_boilerplate)
 
 [![Daily CI Build](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml/badge.svg)](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml)
 [![Documentation](https://github.com/arup-group/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://arup-group.github.io/python_boilerplate)
