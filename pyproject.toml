@@ -117,6 +117,6 @@ python_boilerplate = "python_boilerplate.cli:cli"
 dev = { file = ["requirements/dev.txt"] }
 
 [project.urls]
-repository = "https://github.com/arup-group/python_boilerplate"
-documentation = "https://arup-group.github.io/python_boilerplate"
-changelog = "https://github.com/arup-group/python_boilerplate/blob/main/CHANGELOG.md"
+repository = "https://github.com/brynpickering/python_boilerplate"
+documentation = "https://brynpickering.github.io/python_boilerplate"
+changelog = "https://github.com/brynpickering/python_boilerplate/blob/main/CHANGELOG.md"

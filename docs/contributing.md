@@ -8,23 +8,23 @@ to report issues, request features, or exchange with our community, just follow 
 
 __Is something not working?__
 
-[:material-bug: Report a bug](https://github.com/arup-group/python_boilerplate/issues/new?template=BUG-REPORT.yml "Report a bug in python_boilerplate by creating an issue and a reproduction"){ .md-button }
+[:material-bug: Report a bug](https://github.com/brynpickering/python_boilerplate/issues/new?template=BUG-REPORT.yml "Report a bug in python_boilerplate by creating an issue and a reproduction"){ .md-button }
 
 __Missing information in our docs?__
 
-[:material-file-document: Report a docs issue](https://github.com/arup-group/python_boilerplate/issues/new?template=DOCS.yml "Report missing information or potential inconsistencies in our documentation"){ .md-button }
+[:material-file-document: Report a docs issue](https://github.com/brynpickering/python_boilerplate/issues/new?template=DOCS.yml "Report missing information or potential inconsistencies in our documentation"){ .md-button }
 
 __Want to submit an idea?__
 
-[:material-lightbulb-on: Request a change](https://github.com/arup-group/python_boilerplate/issues/new?template=FEATURE-REQUEST.yml "Propose a change or feature request or suggest an improvement"){ .md-button }
+[:material-lightbulb-on: Request a change](https://github.com/brynpickering/python_boilerplate/issues/new?template=FEATURE-REQUEST.yml "Propose a change or feature request or suggest an improvement"){ .md-button }
 
 __Have a question or need help?__
 
-[:material-chat-question: Ask a question](https://github.com/arup-group/python_boilerplate/discussions "Ask questions on our discussion board and get in touch with our community"){ .md-button }
+[:material-chat-question: Ask a question](https://github.com/brynpickering/python_boilerplate/discussions "Ask questions on our discussion board and get in touch with our community"){ .md-button }
 
 ## Developing python_boilerplate
 
-To find beginner-friendly existing bugs and feature requests you may like to start out with, take a look at our [good first issues](https://github.com/arup-group/python_boilerplate/contribute).
+To find beginner-friendly existing bugs and feature requests you may like to start out with, take a look at our [good first issues](https://github.com/brynpickering/python_boilerplate/contribute).
 
 ### Setting up a development environment
 
@@ -32,7 +32,7 @@ To create a development environment for python_boilerplate, with all libraries r
 
 1. Install mamba with the [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) executable for your operating system.
 1. Open the command line (or the "miniforge prompt" in Windows).
-1. Download (a.k.a., clone) the python_boilerplate repository: `git clone git@github.com:arup-group/python_boilerplate.git`
+1. Download (a.k.a., clone) the python_boilerplate repository: `git clone git@github.com:brynpickering/python_boilerplate.git`
 1. Change into the `python_boilerplate` directory: `cd python_boilerplate`
 1. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge --file requirements/base.txt --file requirements/dev.txt`
 1. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`

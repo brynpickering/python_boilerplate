@@ -12,7 +12,7 @@ theme:
   custom_dir: docs/overrides
   features:
     - navigation.indexes
-repo_url: https://github.com/arup-group/python_boilerplate/
+repo_url: https://github.com/brynpickering/python_boilerplate/
 site_dir: .docs
 markdown_extensions:
   - admonition

@@ -7,12 +7,9 @@ As a `python_boilerplate` user, it is easiest to install using the [mamba](https
 
 1. Install mamba with the [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) executable for your operating system.
 1. Open the command line (or the "miniforge prompt" in Windows).
-1. Download (a.k.a., clone) the python_boilerplate repository: `git clone git@github.com:arup-group/python_boilerplate.git`
-1. Change into the `python_boilerplate` directory: `cd python_boilerplate`
-1. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge -c city-modelling-lab --file requirements/base.txt`
+1. Create a python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge python`
 1. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`
-1. Install the python_boilerplate package into the environment, ignoring dependencies (we have dealt with those when creating the mamba environment): `pip install --no-deps .`
-
+1. Install the python_boilerplate package into the environment: `pip install python_boilerplate`
 
 All together:
 
@@ -20,7 +17,7 @@ All together:
 
 ### Running the example notebooks
 
-If you have followed the non-developer installation instructions above, you will need to install `jupyter` into your `python_boilerplate` environment to run the [example notebooks](https://github.com/arup-group/python_boilerplate/tree/main/examples):
+If you have followed the non-developer installation instructions above, you will need to install `jupyter` into your `python_boilerplate` environment to run the [example notebooks](https://github.com/brynpickering/python_boilerplate/tree/main/examples):
 
 ``` shell
 mamba install -n python_boilerplate jupyter
