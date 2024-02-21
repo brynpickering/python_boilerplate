@@ -25,9 +25,8 @@ To install python_boilerplate, we recommend using the [mamba](https://mamba.read
 
 ``` shell
 
-mamba create -n python_boilerplate -c conda-forge python
+mamba create -n python_boilerplate -c conda-forge -c brynpickering python_boilerplate
 mamba activate python_boilerplate
-pip install python_boilerplate
 
 ```
 <!--- --8<-- [end:docs-install-user] -->

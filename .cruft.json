@@ -14,7 +14,7 @@
       "module_name": "python_boilerplate",
       "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
       "upload_pypi_package": "y",
-      "upload_conda_package": "n",
+      "upload_conda_package": "y",
       "conda_channel": "brynpickering",
       "version": "0.1.0",
       "command_line_interface": "y",
