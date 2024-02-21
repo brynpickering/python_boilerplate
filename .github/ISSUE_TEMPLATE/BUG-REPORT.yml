@@ -30,7 +30,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of python_boilerplate are you using?
+      description: What version of bryn_python_boilerplate are you using?
       placeholder: v0.1.0
   - type: textarea
     id: logs

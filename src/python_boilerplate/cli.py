@@ -3,7 +3,7 @@
 import click
 
 
-@click.version_option(package_name="python_boilerplate")
+@click.version_option(package_name="bryn_python_boilerplate")
 @click.command()
 def cli(args=None):
     """Console script for python_boilerplate."""

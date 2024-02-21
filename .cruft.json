@@ -10,7 +10,7 @@
       "repository_owner": "brynpickering",
       "project_title": "Python Boilerplate",
       "repository_name": "python_boilerplate",
-      "package_name": "python_boilerplate",
+      "package_name": "bryn_python_boilerplate",
       "module_name": "python_boilerplate",
       "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
       "upload_pypi_package": "y",

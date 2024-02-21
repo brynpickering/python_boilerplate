@@ -7,7 +7,7 @@ As a `python_boilerplate` user, it is easiest to install using the [mamba](https
 
 1. Install mamba with the [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) executable for your operating system.
 1. Open the command line (or the "miniforge prompt" in Windows).
-1. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge -c brynpickering python_boilerplate`
+1. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge -c brynpickering bryn_python_boilerplate`
 1. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`
 
 All together:

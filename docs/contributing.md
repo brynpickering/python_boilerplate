@@ -28,7 +28,7 @@ To find beginner-friendly existing bugs and feature requests you may like to sta
 
 ### Setting up a development environment
 
-To create a development environment for python_boilerplate, with all libraries required for development and quality assurance installed, it is easiest to install python_boilerplate using the [mamba](https://mamba.readthedocs.io/en/latest/index.html) package manager, as follows:
+To create a development environment for python_boilerplate, with all libraries required for development and quality assurance installed, it is easiest to install bryn_python_boilerplate using the [mamba](https://mamba.readthedocs.io/en/latest/index.html) package manager, as follows:
 
 1. Install mamba with the [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) executable for your operating system.
 1. Open the command line (or the "miniforge prompt" in Windows).
@@ -36,7 +36,7 @@ To create a development environment for python_boilerplate, with all libraries r
 1. Change into the `python_boilerplate` directory: `cd python_boilerplate`
 1. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge --file requirements/base.txt --file requirements/dev.txt`
 1. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`
-1. Install the python_boilerplate package into the environment, in editable mode and ignoring dependencies (we have dealt with those when creating the mamba environment): `pip install --no-deps -e .`
+1. Install the bryn_python_boilerplate package into the environment, in editable mode and ignoring dependencies (we have dealt with those when creating the mamba environment): `pip install --no-deps -e .`
 
 All together:
 
