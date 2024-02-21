@@ -1,19 +1,19 @@
-
 {% set pyproject = load_file_data('../pyproject.toml', from_recipe_dir=True) %}
+{% set version = load_file_regex(load_file='../python_boilerplate/__init__.py', regex_pattern="__version__ = \"([a-zA-Z0-9\.].*?)\"", from_recipe_dir=True) %}
 {% set requirements = load_file_regex(load_file='../requirements/base.txt', regex_pattern="", from_recipe_dir=True) %}
 {% set requirements_dev = load_file_regex(load_file='../requirements/dev.txt', regex_pattern="", from_recipe_dir=True) %}
 
 package:
   name: {{ pyproject.project.name }}
-  version: {{ pyproject.project.version }}
+  version: {{ version.group(1) }}
 
 source:
   path: ..
 
 build:
   # Add the line
-  # "skip: True  # [not win]" to limit to Windows.
-  # "skip: True  # [py<35]" to limit python version
+  # "skip: True  # [not win]" to skip all architectures **except** Windows (also remove `noarch: python` below).
+  # "skip: True  # [win]" to skip **only** Windows (also remove `noarch: python` below).
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
   noarch: python
 

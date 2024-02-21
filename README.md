@@ -4,8 +4,8 @@
 
 # Python Boilerplate (python_boilerplate)
 
-[![Daily CI Build](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml/badge.svg)](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml)
-[![Documentation](https://github.com/arup-group/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://arup-group.github.io/python_boilerplate)
+[![Daily CI Build](https://github.com/brynpickering/python_boilerplate/actions/workflows/daily-scheduled-ci.yml/badge.svg)](https://github.com/brynpickering/python_boilerplate/actions/workflows/daily-scheduled-ci.yml)
+[![Documentation](https://github.com/brynpickering/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://brynpickering.github.io/python_boilerplate)
 
 This is a test repo.
 
@@ -17,7 +17,8 @@ For more detailed instructions, see our [documentation](https://brynpickering.gi
 
 ## Installation
 
-To install python_boilerplate, we recommend using the [mamba](https://mamba.readthedocs.io/en/latest/index.html) package manager:
+To install python_boilerplate
+ (indexed online as bryn_python_boilerplate), we recommend using the [mamba](https://mamba.readthedocs.io/en/latest/index.html) package manager:
 
 ### As a user
 <!--- --8<-- [start:docs-install-user] -->
@@ -25,7 +26,8 @@ To install python_boilerplate, we recommend using the [mamba](https://mamba.read
 
 ``` shell
 
-mamba create -n python_boilerplate -c conda-forge -c brynpickering python_boilerplate
+mamba create -n python_boilerplate -c conda-forge -c brynpickering bryn_python_boilerplate
+mamba activate python_boilerplate
 
 ```
 <!--- --8<-- [end:docs-install-user] -->
