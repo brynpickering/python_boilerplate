@@ -4,8 +4,8 @@
 
 # Python Boilerplate (python_boilerplate)
 
-[![Daily CI Build](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml/badge.svg)](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml)
-[![Documentation](https://github.com/arup-group/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://arup-group.github.io/python_boilerplate)
++[![Daily CI Build](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml/badge.svg)](https://github.com/arup-group/python_boilerplate/actions/workflows/daily-scheduled-ci.yml)
++[![Documentation](https://github.com/arup-group/python_boilerplate/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://arup-group.github.io/python_boilerplate)
 
 This is a test repo.
 
@@ -13,7 +13,7 @@ This is a test repo.
 
 ## Documentation
 
-For more detailed instructions, see our [documentation](https://brynpickering.github.io/python_boilerplate/latest).
++For more detailed instructions, see our [documentation](https://arup-group.github.io/python_boilerplate/latest).
 
 ## Installation
 
@@ -25,22 +25,25 @@ To install python_boilerplate, we recommend using the [mamba](https://mamba.read
 
 ``` shell
 
-mamba create -n python_boilerplate -c conda-forge -c brynpickering python_boilerplate
-
+git clone git@github.com:arup-group/python_boilerplate.git
+cd python_boilerplate
+mamba create -n python_boilerplate -c conda-forge --file requirements/base.txt
+mamba activate python_boilerplate
+pip install --no-deps -e .
 ```
 <!--- --8<-- [end:docs-install-user] -->
 
 ### As a developer
 <!--- --8<-- [start:docs-install-dev] -->
 ``` shell
-git clone git@github.com:brynpickering/python_boilerplate.git
+git clone git@github.com:arup-group/python_boilerplate.git
 cd python_boilerplate
 mamba create -n python_boilerplate -c conda-forge --file requirements/base.txt --file requirements/dev.txt
 mamba activate python_boilerplate
 pip install --no-deps -e .
 ```
 <!--- --8<-- [end:docs-install-dev] -->
-For more detailed instructions, see our [documentation](https://brynpickering.github.io/python_boilerplate/latest/installation/).
+For more detailed instructions, see our [documentation](https://arup-group.github.io/python_boilerplate/latest/installation/).
 
 ## Contributing
 
@@ -55,12 +58,12 @@ You can also run these checks yourself at any time to ensure staged changes are 
 - `pytest` - run the unit test suite and check test coverage.
 - `pytest -p memray -m "high_mem" --no-cov` (not available on Windows) - after installing memray (`mamba install memray pytest-memray`), test that memory and time performance does not exceed benchmarks.
 
-For more information, see our [documentation](https://brynpickering.github.io/python_boilerplate/latest/contributing/).
+For more information, see our [documentation](https://arup-group.github.io/python_boilerplate/latest/contributing/).
 
 ## Building the documentation
 
 If you are unable to access the online documentation, you can build the documentation locally.
-First, [install a development environment of python_boilerplate](https://brynpickering.github.io/python_boilerplate/latest/contributing/coding/), then deploy the documentation using [mike](https://github.com/jimporter/mike):
+First, [install a development environment of python_boilerplate](https://arup-group.github.io/python_boilerplate/latest/contributing/coding/), then deploy the documentation using [mike](https://github.com/jimporter/mike):
 
 ```
 mike deploy develop

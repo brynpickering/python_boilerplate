@@ -4,8 +4,8 @@ We're really glad you're reading this, because we need volunteer developers to h
 
 Some of the resources to look at if you're interested in contributing:
 
-* Look at open issues tagged with ["help wanted"](https://github.com/brynpickering/python_boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and ["good first issue"](https://github.com/brynpickering/python_boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-* Look at the [contributing guide in our documentation](https://brynpickering.github.io/python_boilerplate/contributing)
+* Look at open issues tagged with ["help wanted"](https://github.com/arup-group/python_boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) and ["good first issue"](https://github.com/arup-group/python_boilerplate/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+* Look at the [contributing guide in our documentation](https://arup-group.github.io/python_boilerplate/contributing)
 
 ## Licensing
 By contributing to python_boilerplate, i.e. through opening a pull request, you represent that your contributions are your own original work and that you have the right to license them, and you agree that your contributions are licensed under the MIT license.
@@ -14,18 +14,18 @@ By contributing to python_boilerplate, i.e. through opening a pull request, you 
 You can open an issue on GitHub to report bugs or request new python_boilerplate features.
 Follow these links to submit your issue:
 
-- [Report bugs or other problems while running python_boilerplate](https://github.com/brynpickering/python_boilerplate/issues/new?template=BUG-REPORT.yml).
+- [Report bugs or other problems while running python_boilerplate](https://github.com/arup-group/python_boilerplate/issues/new?template=BUG-REPORT.yml).
 If reporting an error, please include a full traceback in your issue.
 
-- [Request features that python_boilerplate does not already include](https://github.com/brynpickering/python_boilerplate/issues/new?template=FEATURE-REQUEST.yml).
+- [Request features that python_boilerplate does not already include](https://github.com/arup-group/python_boilerplate/issues/new?template=FEATURE-REQUEST.yml).
 
-- [Report missing or inconsistent information in our documentation](https://github.com/brynpickering/python_boilerplate/issues/new?template=DOCS.yml).
+- [Report missing or inconsistent information in our documentation](https://github.com/arup-group/python_boilerplate/issues/new?template=DOCS.yml).
 
-- [Any other issue](https://github.com/brynpickering/python_boilerplate/issues/new).
+- [Any other issue](https://github.com/arup-group/python_boilerplate/issues/new).
 
 ## Submitting changes
 
-Look at the [development guide in our documentation](https://brynpickering.github.io/python_boilerplate/contributing) for information on how to get set up for development.
+Look at the [development guide in our documentation](https://arup-group.github.io/python_boilerplate/contributing) for information on how to get set up for development.
 
 <!--- the "--8<--" html comments define what part of this file to add to the index page of the documentation -->
 <!--- --8<-- [start:docs] -->
@@ -37,7 +37,7 @@ To contribute changes:
 3. Test your changes using `pytest`.
 4. Commit your changes to the feature branch (you should have `pre-commit` installed to ensure your code is correctly formatted when you commit changes).
 5. Push the branch to GitHub (`git push origin new-fix-or-feature`).
-6. On GitHub, create a new [pull request](https://github.com/brynpickering/python_boilerplate/pull/new/main) from the feature branch.
+6. On GitHub, create a new [pull request](https://github.com/arup-group/python_boilerplate/pull/new/main) from the feature branch.
 
 ### Pull requests
 
@@ -86,7 +86,7 @@ When adding docstrings, we request you use the [Google docstring style](https://
 
 ### Create release
 
-- [ ] Bump the version number in `pyproject.toml`
+- [ ] Bump the version number in `src/python_boilerplate/__init__.py`
 - [ ] Update the [changelog][changelog] with final version number of the form `vX.Y.Z`, release date, and github `compare` link (at the bottom of the page).
 - [ ] Commit with message `Release vX.Y.Z`, then add a `vX.Y.Z` tag.
 - [ ] Create a release pull request to verify that the conda package builds successfully.
@@ -95,7 +95,7 @@ When adding docstrings, we request you use the [Google docstring style](https://
 ### Post-release
 
 - [ ] Update the changelog, adding a new `[Unreleased]` heading.
-- [ ] Update `pyproject.toml` to the next version appended with `.dev0`, in preparation for the next main commit.
+- [ ] Update `src/python_boilerplate/__init__.py` to the next version appended with `.dev0`, in preparation for the next main commit.
 
 
 <!--- --8<-- [end:docs] -->
