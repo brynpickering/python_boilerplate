@@ -28,15 +28,15 @@ To find beginner-friendly existing bugs and feature requests you may like to sta
 
 ### Setting up a development environment
 
-To create a development environment for python_boilerplate, with all libraries required for development and quality assurance installed, it is easiest to install python_boilerplate using the [mamba](https://mamba.readthedocs.io/en/latest/index.html) package manager, as follows:
+To create a development environment for python_boilerplate, with all libraries required for development and quality assurance installed, it is easiest to install bryn_python_boilerplate using the [mamba](https://mamba.readthedocs.io/en/latest/index.html) package manager, as follows:
 
 1. Install mamba with the [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) executable for your operating system.
-2. Open the command line (or the "miniforge prompt" in Windows).
-3. Download (a.k.a., clone) the python_boilerplate repository: `git clone git@github.com:brynpickering/python_boilerplate.git`
-4. Change into the `python_boilerplate` directory: `cd python_boilerplate`
-5. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge --file requirements/base.txt --file requirements/dev.txt`
-6. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`
-7. Install the python_boilerplate package into the environment, in editable mode and ignoring dependencies (we have dealt with those when creating the mamba environment): `pip install --no-deps -e .`
+1. Open the command line (or the "miniforge prompt" in Windows).
+1. Download (a.k.a., clone) the python_boilerplate repository: `git clone git@github.com:brynpickering/python_boilerplate.git`
+1. Change into the `python_boilerplate` directory: `cd python_boilerplate`
+1. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge --file requirements/base.txt --file requirements/dev.txt`
+1. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`
+1. Install the bryn_python_boilerplate package into the environment, in editable mode and ignoring dependencies (we have dealt with those when creating the mamba environment): `pip install --no-deps -e .`
 
 All together:
 
@@ -44,6 +44,7 @@ All together:
 
 If installing directly with pip, you can install these libraries using the `dev` option, i.e., `pip install -e '.[dev]'`
 Either way, you should add your environment as a jupyter kernel, so the example notebooks can run in the tests: `ipython kernel install --user --name=python_boilerplate`
+
 If you plan to make changes to the code then please make regular use of the following tools to verify the codebase while you work:
 
 - `pre-commit`: run `pre-commit install` in your command line to load inbuilt checks that will run every time you commit your changes.
@@ -54,12 +55,13 @@ You can also run these checks yourself at any time to ensure staged changes are 
 
     If you already have an environment called `python_boilerplate` on your system (e.g., for a stable installation of the package), you will need to [chose a different environment name][choosing-a-different-environment-name].
     You will then need to add this as a pytest argument when running the tests: `pytest --nbmake-kernel=[my-env-name]`.
+
 ### Rapid-fire testing
 The following options allow you to strip down the test suite to the bare essentials:
 1. The test suite includes unit tests and integration tests (in the form of jupyter notebooks found in the `examples` directory).
 The integration tests can be slow, so if you want to avoid them during development, you should run `pytest tests/`.
-2. You can avoid generating coverage reports, by adding the `--no-cov` argument: `pytest --no-cov`.
-3. By default, the tests run with up to two parallel threads, to increase this to e.g. 4 threads: `pytest -n4`.
+1. You can avoid generating coverage reports, by adding the `--no-cov` argument: `pytest --no-cov`.
+1. By default, the tests run with up to two parallel threads, to increase this to e.g. 4 threads: `pytest -n4`.
 
 All together:
 

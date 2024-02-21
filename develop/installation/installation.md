@@ -5,18 +5,17 @@
 
 As a `python_boilerplate` user, it is easiest to install using the [mamba](https://mamba.readthedocs.io/en/latest/index.html) package manager, as follows:
 
-
 1. Install mamba with the [Mambaforge](https://github.com/conda-forge/miniforge#mambaforge) executable for your operating system.
-2. Open the command line (or the "miniforge prompt" in Windows).
-
-3. mamba create -n python_boilerplate -c conda-forge -c brynpickering python_boilerplate
-4. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`
-
+1. Open the command line (or the "miniforge prompt" in Windows).
+1. Create the python_boilerplate mamba environment: `mamba create -n python_boilerplate -c conda-forge -c brynpickering bryn_python_boilerplate`
+1. Activate the python_boilerplate mamba environment: `mamba activate python_boilerplate`
 
 All together:
 
 --8<-- "README.md:docs-install-user"
+
 ### Running the example notebooks
+
 If you have followed the non-developer installation instructions above, you will need to install `jupyter` into your `python_boilerplate` environment to run the [example notebooks](https://github.com/brynpickering/python_boilerplate/tree/main/examples):
 
 ``` shell
@@ -32,6 +31,7 @@ jupyter notebook
 ```
 
 ### Choosing a different environment name
+
 If you would like to use a different name to `python_boilerplate` for your mamba environment, the installation becomes (where `[my-env-name]` is your preferred name for the environment):
 
 ``` shell
@@ -39,6 +39,7 @@ mamba create -n [my-env-name] -c conda-forge --file requirements/base.txt
 mamba activate [my-env-name]
 ipython kernel install --user --name=[my-env-name]
 ```
+
 ## Setting up a development environment
 
 The install instructions are slightly different to create a development environment compared to a user environment:
