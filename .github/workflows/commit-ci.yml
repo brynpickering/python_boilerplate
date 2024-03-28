@@ -20,3 +20,45 @@ jobs:
       py3version: "12"
       notebook_kernel: python_boilerplate
       lint: false
+
+  cruftupdate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v4
+      - name: Set up dependencies
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          micromamba-version: latest
+          environment-name: ${{ github.event.repository.name }}-cruft
+          create-args: cruft python=3.11
+          post-cleanup: all
+          cache-environment: true
+
+      - name: Add dummy GitHub credentials
+        run: |
+          git config --global user.name Cruft check
+          git config --global user.email check@dummy.bot.com
+
+      - name: Check project against template
+        id: check
+        run: cruft check
+        continue-on-error: true
+
+      - name: Check on failures
+        if: steps.check.outcome != 'success'
+        run: cruft update -y
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: Cruft - update against template
+          title: Cruft - update against template
+          body: |
+            # Cruft - update against template
+
+            Before you merge this PR, ensure all merge conflicts (documented in `.rej` files have been resolved)
+          base: main
+          labels: automated-pr, template
+          branch: cruft-update
+          delete-branch: true
