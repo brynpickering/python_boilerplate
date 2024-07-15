@@ -27,6 +27,7 @@ jobs:
       lint: false
       pytest_args: '--no-cov'  # ignore coverage
       upload_to_codecov: false
+      additional_cache_dir: ${{ github.workspace }}/tests/foobar.txt
 
   test-coverage:
     uses: arup-group/actions-city-modelling-lab/.github/workflows/python-install-lint-test.yml@update-windows-gh-workspace
