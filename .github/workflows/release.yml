@@ -26,7 +26,7 @@ jobs:
   docs-stable:
     permissions:
       contents: write
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@setup-micromamba-to-miniconda
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@update-windows-gh-workspace
     with:
       deploy_type: update_stable
       notebook_kernel: python_boilerplate
