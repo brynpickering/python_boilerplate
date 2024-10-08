@@ -1,6 +1,6 @@
 {
   "template": "https://github.com/arup-group/cookiecutter-pypackage",
-  "commit": "f14fd0faf5ae5587fc4e4778a04620b0bdae08a1",
+  "commit": "5849e8472e9cfe62851b9db7e5d379b96ae9dceb",
   "checkout": null,
   "context": {
     "cookiecutter": {
@@ -16,11 +16,11 @@
       "upload_pypi_package": "y",
       "upload_conda_package": "y",
       "conda_channel": "brynpickering",
-      "version": "0.1.0",
       "command_line_interface": "y",
       "create_docker_file": "y",
       "create_author_file": "n",
       "create_jupyter_notebook_directory": "y",
+      "check_docs_accessibility_in_CI": "n",
       "open_source_license": "MIT license",
       "_template": "https://github.com/arup-group/cookiecutter-pypackage"
     }

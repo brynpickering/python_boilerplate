@@ -15,11 +15,10 @@ def on_files(files: list, config: dict, **kwargs):
     """Link (1) top-level files to mkdocs files and (2) generate the python API documentation."""
     for file in sorted(Path("./examples").glob("*.ipynb")):
         files.append(_new_file(file, config))
-        nav_reference = [idx for idx in config["nav"] if set(idx.keys()) == {"Examples"}][0]
-        nav_reference["Examples"].append(file.as_posix())
+        _get_nav_list(config["nav"], "Examples").append(file.as_posix())
     for file in Path("./resources").glob("**/*.*"):
         files.append(_new_file(file, config))
-    files.append(_new_file("./CHANGELOG.md", config))
+    files.append(_new_file(Path("./CHANGELOG.md"), config))
 
     api_nav = _api_gen(files, config)
     _update_nav(api_nav, config)
@@ -27,14 +26,14 @@ def on_files(files: list, config: dict, **kwargs):
     return files
 
 
-def _new_file(path: Path, config: str, src_dir: str = ".") -> File:
+def _new_file(path: Path, config: dict, src_dir: str = ".") -> File:
     """Link a file out in the wilderness to a filename in the documentation directory hierarchy.
 
     Args:
         path (Path):
             Path (relative to "src_dir") to file that you want to bring into the documentation directory.
             In the documentation directory, this same path with apply (e.g., `[src_dir]/path/to/file.md` will become `[docs_dir]/path/to/file.md`)
-        config (str): mkdocs config dictionary.
+        config (dict): mkdocs config dictionary.
         src_dir (str, optional):
             Path in which to find the file you want to bring into the docs directory. Defaults to ".".
 
@@ -118,8 +117,27 @@ def _update_nav(api_nav: dict, config: dict) -> None:
     api_reference_nav = {
         "Python API": [*api_nav.pop("top_level"), *[{k: v} for k, v in api_nav.items()]]
     }
-    nav_reference = [idx for idx in config["nav"] if set(idx.keys()) == {"Reference"}][0]
-    nav_reference["Reference"].append(api_reference_nav)
+    _get_nav_list(config["nav"], "Reference").append(api_reference_nav)
+
+
+def _get_nav_list(nav: list[dict | str], ref: str) -> list:
+    """Get navigation entry sub-page list.
+    Navigation list entries can be dictionaries or strings.
+    Sub-list entries can then also be dictionaries or strings. E.g.,
+
+    ```python
+    [{"Page Title": ["sub-page-1", {"Sub-Page-2 Title": "sub-page-2"}, ...], ...}]
+    ```
+
+    Args:
+        nav (list[dict  |  str]): MKdocs `nav` config entry.
+        ref (str): Page title reference to return the sub-list of.
+
+    Returns:
+        list: Nav sub-list linked to `ref`.
+    """
+    nav_ref = [idx for idx in nav if isinstance(idx, dict) and set(idx.keys()) == {ref}][0]
+    return nav_ref[ref]
 
 
 @mkdocs.plugins.event_priority(-100)

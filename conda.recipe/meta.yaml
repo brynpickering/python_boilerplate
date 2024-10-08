@@ -47,7 +47,7 @@ test:
     - {{ dep.lower().replace(" ", "") }}
     {% endfor %}
   commands:
-    - pytest --cov-reset --cov=python_boilerplate tests/
+    - pytest --no-cov tests/
 
 
 about:

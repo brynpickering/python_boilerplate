@@ -23,7 +23,6 @@ To install python_boilerplate
 ### As a user
 <!--- --8<-- [start:docs-install-user] -->
 
-
 ``` shell
 
 mamba create -n python_boilerplate -c conda-forge -c brynpickering bryn_python_boilerplate
@@ -62,15 +61,13 @@ For more information, see our [documentation](https://brynpickering.github.io/py
 ## Building the documentation
 
 If you are unable to access the online documentation, you can build the documentation locally.
-First, [install a development environment of python_boilerplate](https://brynpickering.github.io/python_boilerplate/latest/contributing/coding/), then deploy the documentation using [mike](https://github.com/jimporter/mike):
+First, [install a development environment of python_boilerplate](https://brynpickering.github.io/python_boilerplate/latest/contributing/coding/), then deploy the documentation using [MkDocs](https://www.mkdocs.org/):
 
+``` shell
+mkdocs serve
 ```
-mike deploy develop
-mike serve
-```
 
-Then you can view the documentation in a browser at http://localhost:8000/.
-
+Then you can view the documentation in a browser at <http://localhost:8000/>.
 
 ## Credits
 

@@ -12,6 +12,8 @@ theme:
   custom_dir: docs/overrides
   features:
     - navigation.indexes
+    - navigation.top
+    - content.code.copy
 repo_url: https://github.com/brynpickering/python_boilerplate/
 site_dir: .docs
 markdown_extensions:
@@ -25,17 +27,19 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
+  - pymdownx.inlinehilite:
+      style_plain_text: shell
   - pymdownx.superfences
   - pymdownx.snippets
-  - pymdownx.tasklist:
-      clickable_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
   - toc:
       permalink: "#"
       toc_depth: 3
 hooks:
   - docs/static/hooks.py
 plugins:
+  - search
   - autorefs
   - mkdocs-jupyter:
       include: ["examples/*.ipynb"]
@@ -60,7 +64,6 @@ plugins:
           paths: [src]
           import:
             - https://docs.python.org/3/objects.inv
-  - search
 watch:
   - src/python_boilerplate
 extra_css:
