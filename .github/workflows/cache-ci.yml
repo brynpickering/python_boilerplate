@@ -1,0 +1,32 @@
+name: Cache CI
+
+on:
+  push:
+    branches:
+      - "main"
+    paths-ignore:
+      - README.md
+      - CHANGELOG.md
+      - LICENSE
+      - CONTRIBUTING.md
+      - docs/**
+      - mkdocs.yml
+
+defaults:
+  run:
+    shell: bash -l {0}
+
+jobs:
+  create-caches:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
+        py3version: ["10", "12"]
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: arup-group/actions-city-modelling-lab/.github/actions/create-mamba-env@no-custom-cache-dir
+        with:
+          py3version: ${{ matrix.py3version }}
+          env_name: "${{ matrix.os }}-${{ matrix.py3version }}"
+          cache_mamba_env: "true"
