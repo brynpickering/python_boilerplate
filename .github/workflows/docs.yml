@@ -17,7 +17,7 @@ on:
 jobs:
   docs-test:
     if: github.ref != 'refs/heads/main'
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@main
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@update-windows-gh-workspace
     with:
       deploy_type: test
       notebook_kernel: python_boilerplate
@@ -26,7 +26,7 @@ jobs:
     permissions:
       contents: write
     if: github.ref == 'refs/heads/main'
-    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@main
+    uses: arup-group/actions-city-modelling-lab/.github/workflows/docs-deploy.yml@update-windows-gh-workspace
     with:
       deploy_type: update_latest
       notebook_kernel: python_boilerplate
